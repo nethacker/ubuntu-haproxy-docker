@@ -4,16 +4,13 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     software-properties-common \
     curl \
-  && add-apt-repository ppa:vbernat/haproxy-1.8 && apt-get update && apt-get install -y haproxy\
+  && add-apt-repository ppa:vbernat/haproxy-1.8 && apt-get update && apt-get install -y haproxy \
   && rm -rf /var/lib/apt/lists/*
 
-# Add files.
 ADD haproxy.cfg /etc/haproxy/haproxy.cfg
 ADD haproxy-start.sh /haproxy-start.sh
 
-# Define default command.
 CMD ["bash", "/haproxy-start.sh"]
 
-# Expose ports.
 EXPOSE 80
 EXPOSE 443
