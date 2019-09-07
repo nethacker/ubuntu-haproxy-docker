@@ -8,7 +8,7 @@ Ubuntu 18.04 and HAProxy in Docker.
 ## Build/Customize the image
 If you would like to build the image from the Dockerfile. * Note you can modify the haproxy.cfg
 ```
-docker build -t nethacker/ubuntu-haproxy:latest .
+docker build -t ubuntu-haproxy:latest .
 ```
 
 ## Pull the image
@@ -20,7 +20,7 @@ docker pull nethacker/ubuntu-18-04-haproxy:latest
 ## Start a container
 If you followed the Build path above.
 ```
-docker run -d -p 80:80 nethacker/ubuntu-18-04-haproxy:latest
+docker run -d -p 80:80 ubuntu-18-04-haproxy:latest
 ```
 If you followed the Pull path above.
 ```
