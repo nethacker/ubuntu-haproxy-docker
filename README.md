@@ -32,4 +32,3 @@ If you didn't modify the Dockerfile or HAProxy config you should be able to go t
 
 ## Notes
 
-N/A
